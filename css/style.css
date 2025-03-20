@@ -1,1 +1,54 @@
-
+/* ======== Global style start ========= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    min-width: 1200px;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+/* ======== Global style end ========= */
+/* ========= header section start ============= */
+.site-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 75px;
+    background-color: #fff;
+}
+.nav-list{
+    display: flex;
+    gap: 75px;
+}
+.nav-list li a{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #242424;
+    transition: all 0.4s ease;
+}
+.nav-list li a:hover{
+    color: #b88e2f;
+}
+.header-action{
+    display: flex;
+    gap: 45px;
+}
+.header-action li a{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #242424;
+    transition: all 0.4s ease;
+}
+.header-action li a:hover{
+    color: #b88e2f;
+}
+/* ========= header section end ============= */
