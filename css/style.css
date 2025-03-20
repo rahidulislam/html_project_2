@@ -52,3 +52,65 @@ body{
     color: #b88e2f;
 }
 /* ========= header section end ============= */
+/* ========= hero section start ========= */
+.hero{
+    position: relative;
+    width: 100%;
+}
+.hero-background img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+.hero-content{
+    position: absolute;
+    bottom: 16%;
+    right: 15%;
+    display: flex;
+    flex-direction: column;
+    background: #fff3e3;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 640px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+.hero-tagline{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #333333;
+    padding-top: 30px;
+}
+.hero-title{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 78px;
+    color: #b88e2f;
+}
+.hero-description{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #333333;
+    padding: 16px 25px 48px 0;
+}
+.hero-link{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #fff;
+    border: 1px solid #b88e2f;
+    background-color: #b88e2f;
+    padding: 25px 72px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.hero-link:hover{
+    color: #b88e2f;
+    background-color: transparent;
+    
+}
+/* ========= hero section end ========= */
