@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -341,43 +345,81 @@
           <div class="room-info">
             <h2>50+ Beautiful rooms inspiration</h2>
             <p>
-              Our designer already made a lot of beautiful prototype of rooms that
-              inspire you.
+              Our designer already made a lot of beautiful prototype of rooms
+              that inspire you.
             </p>
             <a href="#">Explore More</a>
           </div>
-          <div class="room-slider-container">
-            <input type="radio" name="slider" id="slide1" checked />
+          <div class="carousel">
+            <!-- <input type="radio" name="slider" id="slide1" checked />
             <input type="radio" name="slider" id="slide2" />
-            <input type="radio" name="slider" id="slide3" />
-            <div class="slides">
-              <div class="slide">
-                <img src="./images/living.png" alt="">
-                <div class="caption">
-                  <h4>01 - Bed Room</h4>
-                  <h3>Inner Peace</h3>
+            <input type="radio" name="slider" id="slide3" /> -->
+            <div class="carousel-slides">
+              <div class="slide active">
+                <img
+                  src="./images/living.png"
+                  alt="Bedroom"
+                />
+                <div class="slide-content">
+                  <div class="slide-info">
+                    <div class="slide-number">01 — Bed Room</div>
+                  <div class="slide-title">Inner Peace</div>
+                  </div>
+                  
+                  <a href="#" class="slide-arrow"><i class="fa-solid fa-arrow-right"></i></a>
                 </div>
               </div>
               <div class="slide">
-                <img src="./images/image 10.png" alt="">
-                <div class="caption">
-                  <h4>01 - Bed Room</h4>
-                  <h3>Inner Peace</h3>
+                <img
+                  src="./images/image 10.png"
+                  alt="Living Room"
+                />
+                <div class="slide-content">
+                  <div class="slide-info">
+                    <div class="slide-number">02 — Living Room</div>
+                    <div class="slide-title">Modern Comfort</div>
+                  </div>
+                  <a href="#" class="slide-arrow"><i class="fa-solid fa-arrow-right"></i></a>
                 </div>
               </div>
               <div class="slide">
-                <img src="./images/image 11.png" alt="">
-                <div class="caption">
-                  <h4>01 - Bed Room</h4>
-                  <h3>Inner Peace</h3>
+                <img
+                  src="./images/dining.png"
+                  alt="Kitchen"
+                />
+                <div class="slide-content">
+                  <div class="slide-info">
+                    <div class="slide-number">03 — Kitchen</div>
+                    <div class="slide-title">Culinary Space</div>
+                  </div>
+                  <a href="#" class="slide-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+              <div class="slide">
+                <img
+                  src="./images/bedroom.png"
+                  alt="Bathroom"
+                />
+                <div class="slide-content">
+                  <div class="slide-info">
+                    <div class="slide-number">04 — Bath Room</div>
+                  <div class="slide-title">Serene Retreat</div>
+                  </div>
+                  <a href="#" class="slide-arrow"><i class="fa-solid fa-arrow-right"></i></a>
                 </div>
               </div>
             </div>
-            <div class="pagination">
+            <div class="carousel-nav">
+              <button class="nav-btn active"></button>
+              <button class="nav-btn"></button>
+              <button class="nav-btn"></button>
+              <button class="nav-btn"></button>
+            </div>
+            <!-- <div class="pagination">
               <label for="slide1"></label>
               <label for="slide2"></label>
               <label for="slide3"></label>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -385,6 +427,7 @@
     </main>
     <footer></footer>
     <script src="js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

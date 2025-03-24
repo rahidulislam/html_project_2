@@ -362,60 +362,118 @@ body {
   color: #b88e2f;
   background-color: transparent;
 }
-.room-slide-container {
-  width: 55%;
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+/* .room-carousel {
+  width: 80%;
+  max-width: 900px;
   overflow: hidden;
   position: relative;
-  border-radius: 10px;
-}
-.slides {
+  /* border-radius: 10px; */
+/* } */
+
+.carousel {
   display: flex;
-  /* width: 300%; */
-  gap: 24px;
-  transition: transform 0.5s ease-in-out;
+  gap: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.carousel-slides {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease;
 }
 .slide {
-  width: 100%;
-  /* flex-shrink: 0; */
+  min-width: 40%;
+  height: 580px;
+  border-radius: 8px;
+  overflow: hidden;
   position: relative;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+.slide:not(.active) {
+  min-width: calc(60% / 3);
+  height: 480px;
+  opacity: 0.7;
+  filter: brightness(0.8);
+}
+.slide.active {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 .slide img {
   width: 100%;
-  border-radius: 10px;
+  height: 100%;
   object-fit: cover;
 }
-.caption {
+
+.slide-content {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.slide-info {
+  /* position: absolute;
+  bottom: 30px;
+  left: 30px; */
+  background: rgba(255, 255, 255, 0.9);
+  padding: 32px;
+  /* border-radius: 5px; */
+}
+.slide-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #b88e2f;
+  /* border-radius: 50%; */
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  /* margin-left: 20px; */
+}
+
+
+.slide-number {
+  font-size: 16px;
+  font-weight: 500;
+  color: #616161;
+  margin-bottom: 5px;
+}
+.slide-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #3a3a3a;
+  margin-bottom: 10px;
+}
+.carousel-nav {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
   position: absolute;
   bottom: 20px;
-  left: 20px;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 10px 15px;
-  border-radius: 5px;
+  right: 20%;
 }
-.controls{
-  position: absolute;
-  top: 58%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-}
-.controls label{
-  background:  rgba(255,255,255,0.8);
-  padding: 10px;
-  cursor: pointer;
+.nav-btn {
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-input[type="radio"]{
-  display: none;
+
+.nav-btn.active {
+  background-color: #b88e2f;
 }
-#slide1:checked ~ .slides{
-  transform: translateX(0%);
-}
-#slide2:checked ~ .slides {
-  transform: translateX(-100%);
-}
-#slide3:checked ~ .slides {
-  transform: translateX(-200%);
-}
+
 /* =========== room carousel section end ============= */
