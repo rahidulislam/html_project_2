@@ -502,3 +502,74 @@ body {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 /* ======== gallery section end ============ */
+/* =========== footer section start ============= */
+.footer-info{
+  display: flex;
+  gap: 70px;
+  padding: 50px 0;
+  justify-content: space-between;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.footer-logo h3{
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+  padding-bottom: 35px;
+}
+.footer-logo address{
+  font-size: 16px;
+  font-weight: 400;
+  color: #9f9f9f;
+}
+.footer-info h4{
+  font-size: 16px;
+  font-weight: 500;
+  color: #9f9f9f;
+  padding-bottom: 30px;
+}
+.footer-link ul li, .footer-help ul li{
+  padding: 15px 0;
+}
+.footer-link ul li a, .footer-help ul li a{
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+.footer-newsletter input{
+  border: none;
+  border-bottom: 1px solid #000000;
+  padding: 10px 20px;
+}
+
+.footer-newsletter form{
+  display: inline-flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-newsletter button{
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  color: #000000;
+  cursor: pointer;
+  transition: color 0.4s ease, border-color 0.4s ease;
+}
+.footer-newsletter button:hover{
+  color: #b88e2f;
+  border-bottom: 1px solid #b88e2f;
+}
+.footer-bottom{
+  padding: 35px 0;
+}
+.footer-bottom p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+/* =========== footer section end ============= */
